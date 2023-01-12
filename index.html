@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+
+      <a-plane src="floor.jpg" position="0 0 0" rotation="-90 0 0" width="20" height="10"></a-plane>
+
+      <a-box src="wall.jpg" position="0 6.5 -4.5" width="20" height="13"></a-box>
+      <a-box color="white" position="0 8.5 -4" width="9" height="0.5" depth="0.5"></a-box>
+
+      <a-box src="chair.jpg" position="7.5 1 0" width="3" height="2" depth="2">
+      </a-box>
+
+      <a-box src="chair.jpg" position="-7.5 1 0" width="3" height="2" depth="2">
+      </a-box>
+
+      
+      <a-box
+        src="table.jpg" width="9" height="3.5" position="0 2 0" rotation="90 0 0" depth="0.6">
+      </a-box>
+      <a-box src="table.jpg" width="1" height="2" depth="1" position="0 1 0">
+      </a-box>
+      <a-box src="lamp.jpg" width="0.5" height="1" depth="0.5" position="0 2 0">
+        <a-sphere radius="0.3" position="0 0.7 0"></a-sphere>
+      </a-box>
+
+      
+
+      <a-camera position="0 5 10">
+      </a-camera>
+      <a-sky src="sky.jpg"></a-sky>
+    </a-scene>
+  </body>
+</html>
